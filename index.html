@@ -3,25 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My First Web Page</title>
+  <title>My Styled Web Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #007bff;
+    }
+
+    a {
+      color: #006400;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    ul {
+      list-style-type: square;
+    }
+
+    form {
+      margin-top: 20px;
+      background-color: #ffffff;
+      padding: 15px;
+      border: 1px solid #ccc;
+      width: 300px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #218838;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Heading -->
   <h1>Welcome to My Website</h1>
-  <h2>This is a sub-heading</h2>
-
-  <!-- Paragraph -->
-  <p>Hello! I'm learning HTML. This is a simple paragraph showing how HTML works.</p>
-
-  <!-- Link -->
+  <p>This is a simple paragraph with basic CSS styling.</p>
   <a href="https://www.google.com" target="_blank">Visit Google</a>
+  <br><br>
+  <img src="https://via.placeholder.com/150" alt="Sample Image" />
 
-  <!-- Image -->
-  <h3>Here’s a sample image:</h3>
-  <img src="https://via.placeholder.com/150" alt="Sample Image">
-
-  <!-- List -->
   <h3>My Hobbies:</h3>
   <ul>
     <li>Coding</li>
@@ -29,14 +80,13 @@
     <li>Cricket</li>
   </ul>
 
-  <!-- Form -->
   <h3>Contact Me</h3>
   <form>
     <label for="name">Name:</label><br />
-    <input type="text" id="name" name="name" /><br /><br />
+    <input type="text" id="name" name="name" /><br />
     
     <label for="email">Email:</label><br />
-    <input type="email" id="email" name="email" /><br /><br />
+    <input type="email" id="email" name="email" /><br />
     
     <input type="submit" value="Submit" />
   </form>
